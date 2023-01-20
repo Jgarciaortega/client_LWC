@@ -1,0 +1,13 @@
+.title{
+    display: flex;
+}
+.img{
+    margin-left: 2%;
+}
+
+.title span{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,24 @@
+<template>
+    <div class="slds-size_2-of-4">  
+        <lightning-card>
+            <div class="title">
+                <div class="img">
+                    <lightning-icon  icon-name="action:new_note" alternative-text="New note" title="New note" size="small" ></lightning-icon>
+                </div>
+               <span class="slds-m-left_xxx-small slds-p-top_small">Clientes</span>
+            </div>
+            <lightning-layout multiple-rows="true">
+                <lightning-layout-item padding="around-small" size="12">
+                <c-form
+                    onsaverecord = {saveRecord}
+                ></c-form>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="12">
+                    <c-table
+                        clientes={clientes}
+                    ></c-table>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-card>
+    </div>
+</template>
